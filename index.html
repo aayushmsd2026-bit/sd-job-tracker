@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Sustainability &amp; Green Finance Jobs – Nepal and Remote</title>
+<style>
+  :root {
+    --bg: #f6f7f4; --card: #ffffff; --ink: #1d2a24; --muted: #5d6b64;
+    --line: #dfe4df; --green: #1f6f4a; --amber: #a86b00; --red: #b3261e; --blue: #24548f;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+         background: var(--bg); color: var(--ink); line-height: 1.45; }
+  header { background: var(--green); color: #fff; padding: 22px 16px 18px; }
+  header h1 { margin: 0 0 4px; font-size: 1.35rem; }
+  header p { margin: 0; opacity: .9; font-size: .92rem; }
+  main { max-width: 860px; margin: 0 auto; padding: 16px; }
+  .summary { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; }
+  .stat { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; flex: 1 1 120px; }
+  .stat b { display: block; font-size: 1.4rem; }
+  .stat span { color: var(--muted); font-size: .82rem; }
+  .filters { display: flex; gap: 8px; flex-wrap: wrap; margin: 4px 0 16px; }
+  .filters button { border: 1px solid var(--line); background: var(--card); color: var(--ink); padding: 7px 14px;
+                    border-radius: 20px; font-size: .88rem; cursor: pointer; }
+  .filters button.on { background: var(--ink); color: #fff; border-color: var(--ink); }
+  h2 { font-size: 1.05rem; margin: 22px 0 10px; }
+  h2 small { color: var(--muted); font-weight: normal; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; margin-bottom: 12px; }
+  .top { display: flex; justify-content: space-between; gap: 10px; align-items: flex-start; }
+  .card h3 { margin: 0 0 3px; font-size: 1rem; }
+  .org { color: var(--muted); font-size: .88rem; }
+  .fit { text-align: center; min-width: 64px; }
+  .fit b { display: block; font-size: 1.25rem; }
+  .fit span { font-size: .72rem; text-transform: uppercase; letter-spacing: .04em; }
+  .strong { color: var(--green); } .good { color: var(--blue); } .stretch { color: var(--muted); }
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; margin: 8px 0; }
+  .tag { font-size: .76rem; padding: 2px 9px; border-radius: 10px; background: #eef1ee; color: var(--ink); }
+  .tag.soon { background: #fbe9e7; color: var(--red); font-weight: 600; }
+  .tag.ok { background: #e6f2ea; color: var(--green); }
+  .tag.verify { background: #fff4dc; color: var(--amber); }
+  .why { margin: 6px 0; font-size: .92rem; }
+  .req { color: var(--muted); font-size: .85rem; margin: 4px 0 8px; }
+  a.apply { display: inline-block; font-size: .88rem; color: #fff; background: var(--green); padding: 6px 14px;
+            border-radius: 8px; text-decoration: none; }
+  .closed { opacity: .72; }
+  .closed a.apply { background: var(--muted); }
+  .watch { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; }
+  .watch a { color: var(--blue); font-weight: 600; text-decoration: none; }
+  .watch p { margin: 4px 0 0; font-size: .85rem; color: var(--muted); }
+  .empty { color: var(--muted); font-style: italic; padding: 8px 0; }
+  .note { font-size: .85rem; color: var(--muted); background: var(--card); border: 1px dashed var(--line);
+          border-radius: 10px; padding: 10px 14px; }
+  footer { text-align: center; color: var(--muted); font-size: .8rem; padding: 24px 16px 36px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Sustainability &amp; Green Finance Jobs</h1>
+  <p>Nepal roles and remote roles open to Nepali applicants. Updated weekly. <span id="updated"></span></p>
+</header>
+<main>
+  <div class="summary">
+    <div class="stat"><b id="n-open">–</b><span>Open now</span></div>
+    <div class="stat"><b id="n-verify">–</b><span>Check deadline</span></div>
+    <div class="stat"><b id="n-strong">–</b><span>Strong fit (70+)</span></div>
+  </div>
+
+  <div class="filters" id="filters">
+    <button data-f="all" class="on">All</button>
+    <button data-f="Nepal">Nepal</button>
+    <button data-f="Remote">Remote</button>
+    <button data-f="strong">Strong fit only</button>
+  </div>
+
+  <h2>Open now <small>– nearest deadline first</small></h2>
+  <div id="open"></div>
+
+  <h2>Check the deadline <small>– seen recently, deadline not confirmed</small></h2>
+  <div id="verify"></div>
+
+  <h2>Recently closed <small>– these roles come back, so watch for them</small></h2>
+  <div id="closed"></div>
+
+  <h2>Where to watch</h2>
+  <div class="watch" id="watch"></div>
+
+  <h2>How the fit score works</h2>
+  <p class="note">
+    Score out of 100, based on my background: bank data analyst (credit risk model, portfolio growth, HR analytics),
+    e-commerce analytics across 4 countries, 2 years of research for Fortune 500 clients, an MBA, and a Master's in
+    Sustainable Development in progress.<br>
+    Theme fit (green or climate finance, financial inclusion, SDG finance, research or MEL) up to 40 ·
+    Skills fit up to 30 · Eligibility (nationality, years of experience) up to 20 ·
+    Practicality (Kathmandu or remote, works around a full-time job) up to 10.<br>
+    70+ = strong · 50–69 = good · below 50 = stretch.
+  </p>
+</main>
+<footer>Personal job tracker. Always confirm details on the official posting before applying.</footer>
+
+<script>
+(function () {
+  var state = { data: null, filter: "all" };
+  var today = new Date(); today.setHours(0, 0, 0, 0);
+
+  function daysLeft(d) {
+    if (!d) return null;
+    var p = d.split("-");
+    var dt = new Date(+p[0], +p[1] - 1, +p[2]);
+    return Math.round((dt - today) / 86400000);
+  }
+  function fmtDate(d) {
+    if (!d) return "";
+    var p = d.split("-");
+    var m = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][+p[1] - 1];
+    return +p[2] + " " + m + " " + p[0];
+  }
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+  function fitClass(f) { return f >= 70 ? "strong" : f >= 50 ? "good" : "stretch"; }
+  function fitWord(f) { return f >= 70 ? "Strong" : f >= 50 ? "Good" : "Stretch"; }
+
+  // A job marked "open" whose deadline has passed is shown as closed.
+  function bucket(j) {
+    if (j.status === "open") {
+      var d = daysLeft(j.deadline);
+      if (d !== null && d < 0) return "closed";
+      return "open";
+    }
+    return j.status === "verify" ? "verify" : "closed";
+  }
+
+  function card(j, b) {
+    var d = daysLeft(j.deadline), tags = [];
+    tags.push('<span class="tag">' + esc(j.mode === "Remote" ? "Remote" : "Nepal") + " · " + esc(j.location) + "</span>");
+    if (b === "open" && d !== null) {
+      tags.push('<span class="tag ' + (d <= 5 ? "soon" : "ok") + '">' +
+        (d === 0 ? "Closes today" : d + " day" + (d === 1 ? "" : "s") + " left") + " · " + fmtDate(j.deadline) + "</span>");
+    } else if (b === "verify") {
+      tags.push('<span class="tag verify">Deadline not confirmed</span>');
+    } else if (j.deadline) {
+      tags.push('<span class="tag">Closed ' + fmtDate(j.deadline) + "</span>");
+    }
+    var label = b === "closed" ? "See posting" : "View &amp; apply";
+    return '<div class="card' + (b === "closed" ? " closed" : "") + '">' +
+      '<div class="top"><div><h3>' + esc(j.title) + '</h3><div class="org">' + esc(j.org) + "</div></div>" +
+      '<div class="fit ' + fitClass(j.fit) + '"><b>' + esc(j.fit) + "</b><span>" + fitWord(j.fit) + "</span></div></div>" +
+      '<div class="tags">' + tags.join("") + "</div>" +
+      '<p class="why">' + esc(j.why) + "</p>" +
+      (j.requirements ? '<p class="req">' + esc(j.requirements) + "</p>" : "") +
+      '<a class="apply" href="' + esc(j.link) + '" target="_blank" rel="noopener">' + label + "</a></div>";
+  }
+
+  function pass(j) {
+    if (state.filter === "all") return true;
+    if (state.filter === "strong") return j.fit >= 70;
+    return j.mode === state.filter;
+  }
+
+  function render() {
+    var jobs = state.data.jobs || [], groups = { open: [], verify: [], closed: [] };
+    jobs.forEach(function (j) { groups[bucket(j)].push(j); });
+
+    document.getElementById("n-open").textContent = groups.open.length;
+    document.getElementById("n-verify").textContent = groups.verify.length;
+    document.getElementById("n-strong").textContent =
+      groups.open.concat(groups.verify).filter(function (j) { return j.fit >= 70; }).length;
+
+    groups.open.sort(function (a, b) { return (a.deadline || "9999") < (b.deadline || "9999") ? -1 : 1; });
+    groups.verify.sort(function (a, b) { return b.fit - a.fit; });
+    groups.closed.sort(function (a, b) { return b.fit - a.fit; });
+
+    ["open", "verify", "closed"].forEach(function (k) {
+      var list = groups[k].filter(pass);
+      document.getElementById(k).innerHTML = list.length
+        ? list.map(function (j) { return card(j, k); }).join("")
+        : '<p class="empty">Nothing here right now.</p>';
+    });
+  }
+
+  fetch("jobs.json?v=" + Date.now())
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      state.data = data;
+      document.getElementById("updated").textContent = "Last update: " + fmtDate(data.updated) + ".";
+      document.getElementById("watch").innerHTML = (data.watch || []).map(function (w) {
+        return '<div class="card"><a href="' + esc(w.link) + '" target="_blank" rel="noopener">' + esc(w.name) +
+          "</a><p>" + esc(w.note) + "</p></div>";
+      }).join("");
+      render();
+    })
+    .catch(function () {
+      document.getElementById("open").innerHTML = '<p class="empty">Could not load jobs.json.</p>';
+    });
+
+  document.getElementById("filters").addEventListener("click", function (e) {
+    var f = e.target.getAttribute("data-f");
+    if (!f) return;
+    state.filter = f;
+    Array.prototype.forEach.call(this.children, function (b) { b.classList.toggle("on", b === e.target); });
+    if (state.data) render();
+  });
+})();
+</script>
+</body>
+</html>

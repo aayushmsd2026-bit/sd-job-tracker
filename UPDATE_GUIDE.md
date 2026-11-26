@@ -1,0 +1,56 @@
+# Weekly update guide
+
+This file tells the weekly update run how to refresh `jobs.json`. The page (`index.html`) only reads `jobs.json`, so the HTML does not change.
+
+## Who the tracker is for
+
+A Nepali professional based in Kathmandu with a full-time bank job:
+
+- Data Analyst at a commercial bank in Nepal since July 2025: auto loan credit risk model (default prediction, automated approvals), credit card portfolio growth, HR analytics framework in Python.
+- Senior Analyst at Daraz (Alibaba), 2023–2025: CRM and user incentives across Nepal, Bangladesh, Pakistan and Sri Lanka, with a US$1.1M monthly budget.
+- Research Analyst at BBN / Business Brainz, 2021–2023: research for Fortune 500 clients in energy, banking and telecom (SWOT, PESTEL).
+- Earlier: mortgage loan processing (Australian loans) and client servicing at an agency, including rural field research for a Gates Foundation project.
+- MBA (Westcliff University); BBA (Kathmandu College of Management); Google certificates in Data Analytics and Project Management.
+- Master's in Sustainable Development at Kathmandu University, started August 2026.
+- About 6 years of total work experience. Uses Python. No SPSS or Stata listed.
+
+Best-fit themes: green or climate finance, sustainable or SDG finance, financial inclusion, private sector development, green taxonomy or ESG in banking, and research, MEL or data roles in development work.
+
+## What to include
+
+- Roles in Nepal (mainly Kathmandu Valley) in sustainable development, climate, environment, green finance, financial inclusion, research, MEL or data.
+- Remote or home-based roles that a Nepali national living in Nepal can actually apply for. UN home-based consultancies and internships usually qualify. Skip "remote" roles limited to the US, UK or EU.
+- Skip roles that need a technical degree he does not have (engineering, medicine, forestry), roles needing 10+ years, and admin, driver, nursing or pure accounting roles.
+
+## Sources to check every week
+
+devjobsnepal.com · ain.org.np/vacancy · jobsnepal.com · merojob.com · manishsaru.com.np ·
+icimod.org/get-involved/vacancies · careers.gggi.org · jobs.undp.org (Nepal and home-based) ·
+jobs.unicef.org (location Nepal) · UN Women careers · impactpool.org · untalent.org (home-based finance and environment) ·
+World Bank / IFC careers (Kathmandu) · iDE, Heifer, Practical Action, Helvetas, Swisscontact Nepal pages.
+
+## Status rules
+
+- `open`: a deadline on or after today was confirmed on the posting.
+- `verify`: seen in the last 3 weeks, but no deadline found.
+- `closed`: the deadline has passed. Keep strong-fit closed roles (fit 60+) for up to about 8 weeks as signals of roles that come back, then remove them. Remove other closed roles.
+- Never invent a deadline, salary or requirement. If it is not on the posting, leave it out.
+
+## Fit score (0–100)
+
+- Theme fit, up to 40: green or climate finance, financial inclusion or SDG finance score highest; research, MEL or data in development next; general climate or environment lower.
+- Skills fit, up to 30: data analysis, credit risk, banking, research, project management.
+- Eligibility, up to 20: nationality allowed; experience asked is 6 years or less.
+- Practicality, up to 10: Kathmandu or remote; can be combined with a full-time job (consultancy or part-time scores higher).
+
+70+ = strong, 50–69 = good, below 50 = stretch. Write `why` in 2–3 short, plain sentences. Say what matches and what is missing.
+
+## jobs.json fields
+
+`id` (unique slug), `title`, `org`, `location`, `mode` ("Nepal" or "Remote"), `deadline` ("YYYY-MM-DD" or null),
+`status` ("open", "verify" or "closed"), `link` (the official posting or the page where it was found), `fit` (number),
+`why`, `requirements` (short), `added` ("YYYY-MM-DD"). Set the top-level `updated` field to today's date.
+
+## Privacy
+
+The repository is public. Do not add the person's name, employer name, email or phone to any file.
