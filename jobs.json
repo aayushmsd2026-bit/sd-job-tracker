@@ -189,6 +189,69 @@
         "basis": "posted",
         "note": "USD 16,487 a year plus housing allowance and insurance. About NPR 2.1 lakh a month before tax (at about NPR 152 per USD)."
       }
+    },
+    {
+      "id": "taf-development-fellows-2027",
+      "title": "Asia Foundation Development Fellows 2027",
+      "org": "The Asia Foundation",
+      "location": "Japan (Mar 2027) + USA (Nov 2027)",
+      "mode": "Remote",
+      "deadline": "2026-12-01",
+      "status": "open",
+      "link": "https://asiafoundation.org/the-asia-foundation-opens-applications-for-2027-development-fellows/",
+      "fit": 62,
+      "why": "A year-long leadership fellowship you do alongside your job. Open to Nepalis under 40. They want a proven record and leadership in a development field, so lead with green finance, your KU project and Toastmasters.",
+      "requirements": "Under 40 on 1 Jan 2027; conversant English; must attend Japan 11–20 Mar 2027 and USA 7–18 Nov 2027; US visa needed. Apply online by 1 Dec 2026.",
+      "added": "2026-11-26",
+      "type": "fellowship",
+      "pay": {
+        "min": null,
+        "max": null,
+        "basis": "award",
+        "note": "Not a salary. Up to USD 2,500 development award plus funded training trips. You keep your job."
+      }
+    },
+    {
+      "id": "adb-ypp-2027",
+      "title": "ADB Young Professionals Program (next round)",
+      "org": "Asian Development Bank",
+      "location": "Manila, Philippines",
+      "mode": "Remote",
+      "deadline": "2026-09-30",
+      "status": "closed",
+      "link": "https://www.adb.org/work-with-us/careers/adb-young-professionals-program",
+      "fit": 80,
+      "why": "Closed for this year. Opens each September. Strong fit: banking, credit risk and finance, 3+ years of experience, and an MBA. Age limit is 32 when you join, so plan for September 2027.",
+      "requirements": "National of an ADB member (Nepal is one); 32 or younger when joining; 3+ years of relevant work; postgraduate degree preferred. 3-year term, starting in Manila.",
+      "added": "2026-11-26",
+      "type": "full-time",
+      "pay": {
+        "min": null,
+        "max": null,
+        "basis": "international scale",
+        "note": "International staff pay in USD. Far above Nepal market pay."
+      }
+    },
+    {
+      "id": "sandee-grant-2026",
+      "title": "SANDEE Research Grant (next call)",
+      "org": "SANDEE / ICIMOD",
+      "location": "Nepal (your own research)",
+      "mode": "Nepal",
+      "deadline": "2025-12-31",
+      "status": "closed",
+      "link": "https://www.icimod.org/sandee/research-grants/",
+      "fit": 66,
+      "why": "Research grant for early-career South Asian researchers in environmental economics. The last call opened in late November 2025 and closed 31 Dec 2025, so the next call may open any day. Your green finance work could become a proposal, ideally with a KU teacher.",
+      "requirements": "Researchers from South Asia / HKH; strong economics methods; people with relatives working with ICIMOD are not eligible.",
+      "added": "2026-11-26",
+      "type": "fellowship",
+      "pay": {
+        "min": null,
+        "max": null,
+        "basis": "grant",
+        "note": "USD 20,000–30,000 over two years for the research. Done alongside your job."
+      }
     }
   ],
   "watch": [
@@ -196,6 +259,21 @@
       "name": "ICIMOD YIPP (young professionals)",
       "link": "https://www.icimod.org/get-involved/vacancies/",
       "note": "Last call: July 2025. Watch from May to August for the next round."
+    },
+    {
+      "name": "ADB Young Professionals Program",
+      "link": "https://www.adb.org/work-with-us/careers/adb-young-professionals-program",
+      "note": "Opens early September each year. Age 32 or under when joining."
+    },
+    {
+      "name": "SANDEE research grants",
+      "link": "https://www.icimod.org/sandee/research-grants/",
+      "note": "Call usually opens in November, deadline end of December."
+    },
+    {
+      "name": "Asia Foundation Development Fellows",
+      "link": "https://asiafoundation.org/the-asia-foundation-opens-applications-for-2027-development-fellows/",
+      "note": "Opens around November each year; deadline early December."
     },
     {
       "name": "ICIMOD vacancies",

@@ -33,6 +33,13 @@ World Bank / IFC careers (Kathmandu) · iDE, Heifer, Practical Action, Helvetas,
 
 - ICIMOD Young ICIMOD Professionals Programme (YIPP). The last call was in July 2025 (deadline 31 July). It is not a fixed yearly call. Check ICIMOD's vacancies page every week, and closely from May to August. If a new call opens, add it as `open`, and put it first in the weekly message.
 
+- Other entry programmes to check every week (add as `open` when a call is live):
+  - ADB Young Professionals Program: opens early September, closes 30 September. Age 32 or under when joining. His best fit.
+  - SANDEE research grant (ICIMOD): call usually opens late November, closes 31 December.
+  - Asia Foundation Development Fellows: opens around November, closes early December.
+  - Skip: World Bank YPP (2–6 years experience maximum; he has more), AIIB Graduate Program (5 years maximum), UN YPP (Nepal not a participating country in 2026; check each year's list).
+- `type` can also be "fellowship" (a grant, award or programme done alongside his job).
+
 ## Status rules
 
 - `open`: a deadline on or after today was confirmed on the posting.

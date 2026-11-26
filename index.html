@@ -166,6 +166,7 @@
     var p = j.pay || {}, t = target();
     if (j.type === "consultancy") return { cls: "side", text: "Side income" };
     if (j.type === "internship") return { cls: "less", text: "Stipend only" };
+    if (j.type === "fellowship") return { cls: "side", text: "Keep your job" };
     if (p.min == null && p.max == null) return { cls: "", text: "Pay unknown" };
     if (t == null) return { cls: "", text: "Enter your pay to compare" };
     if (p.min != null && p.min >= t) return { cls: "more", text: "Pays more" };
