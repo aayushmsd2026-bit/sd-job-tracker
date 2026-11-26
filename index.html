@@ -52,6 +52,19 @@
   .empty { color: var(--muted); font-style: italic; padding: 8px 0; }
   .note { font-size: .85rem; color: var(--muted); background: var(--card); border: 1px dashed var(--line);
           border-radius: 10px; padding: 10px 14px; }
+  .paybox { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 12px; }
+  .paybox p { margin: 4px 0 8px; font-size: .85rem; color: var(--muted); }
+  .payrow { display: flex; gap: 10px; flex-wrap: wrap; }
+  .payrow label { flex: 1 1 150px; font-size: .82rem; color: var(--muted); }
+  .payrow input { display: block; width: 100%; margin-top: 4px; padding: 8px 10px; font-size: 1rem;
+                  border: 1px solid var(--line); border-radius: 8px; }
+  .pay { font-size: .88rem; margin: 6px 0; }
+  .tag.more { background: #e6f2ea; color: var(--green); font-weight: 600; }
+  .tag.maybe { background: #e8eef8; color: var(--blue); font-weight: 600; }
+  .tag.less { background: #fbe9e7; color: var(--red); font-weight: 600; }
+  .tag.side { background: #f1ebf8; color: #5b3a8c; font-weight: 600; }
+  table.ref { width: 100%; border-collapse: collapse; background: var(--card); font-size: .86rem; }
+  table.ref th, table.ref td { border: 1px solid var(--line); padding: 7px 9px; text-align: left; vertical-align: top; }
   footer { text-align: center; color: var(--muted); font-size: .8rem; padding: 24px 16px 36px; }
 </style>
 </head>
@@ -67,11 +80,22 @@
     <div class="stat"><b id="n-strong">–</b><span>Strong fit (70+)</span></div>
   </div>
 
+  <div class="paybox">
+    <b>Pay check</b>
+    <p>Enter your current monthly take-home pay. It stays in this browser only. It is never saved to GitHub.</p>
+    <div class="payrow">
+      <label>My pay (NPR / month)<input id="mypay" type="number" inputmode="numeric" min="0" step="1000" placeholder="e.g. 100000"></label>
+      <label>Raise I want (%)<input id="raise" type="number" inputmode="numeric" min="0" step="5" value="20"></label>
+    </div>
+    <p id="target" class="req"></p>
+  </div>
+
   <div class="filters" id="filters">
     <button data-f="all" class="on">All</button>
     <button data-f="Nepal">Nepal</button>
     <button data-f="Remote">Remote</button>
     <button data-f="strong">Strong fit only</button>
+    <button data-f="paysmore">Pays more / side income</button>
   </div>
 
   <h2>Open now <small>– nearest deadline first</small></h2>
@@ -85,6 +109,14 @@
 
   <h2>Where to watch</h2>
   <div class="watch" id="watch"></div>
+
+  <h2>Pay guide <small>– typical monthly pay in Nepal</small></h2>
+  <table class="ref"><thead><tr><th>Level</th><th>Pay</th><th>Note</th></tr></thead><tbody id="payref"></tbody></table>
+  <p class="note" style="margin-top:10px">
+    "Pays more" means the low end of the range is at or above your target (your pay plus the raise you want).
+    "Maybe" means only the top of the range reaches your target. Market estimates are rough, so always ask the employer.
+    Part-time and remote consultancies count as <b>side income</b>: they add to your salary instead of replacing it.
+  </p>
 
   <h2>How the fit score works</h2>
   <p class="note">
@@ -121,6 +153,35 @@
       return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
     });
   }
+  function store(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+  function load(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  function npr(n) { return "NPR " + Math.round(n).toLocaleString("en-IN"); }
+  function target() {
+    var p = parseFloat(document.getElementById("mypay").value);
+    var r = parseFloat(document.getElementById("raise").value) || 0;
+    return p > 0 ? p * (1 + r / 100) : null;
+  }
+  // Returns {cls, text} comparing the job's pay with the user's target.
+  function payVerdict(j) {
+    var p = j.pay || {}, t = target();
+    if (j.type === "consultancy") return { cls: "side", text: "Side income" };
+    if (j.type === "internship") return { cls: "less", text: "Stipend only" };
+    if (p.min == null && p.max == null) return { cls: "", text: "Pay unknown" };
+    if (t == null) return { cls: "", text: "Enter your pay to compare" };
+    if (p.min != null && p.min >= t) return { cls: "more", text: "Pays more" };
+    if (p.max != null && p.max >= t) return { cls: "maybe", text: "Maybe" };
+    return { cls: "less", text: "Likely pays less" };
+  }
+  function payLine(j) {
+    var p = j.pay || {}, range = "";
+    if (p.min != null && p.max != null) range = npr(p.min) + " – " + Math.round(p.max).toLocaleString("en-IN") + " / month";
+    else if (p.min != null) range = "From " + npr(p.min) + " / month";
+    var v = payVerdict(j);
+    return '<p class="pay"><span class="tag ' + v.cls + '">' + esc(v.text) + "</span> " +
+      (range ? "<b>" + esc(range) + "</b> " : "") +
+      '<span class="org">' + esc(p.basis ? "(" + p.basis + ") " : "") + esc(p.note || "") + "</span></p>";
+  }
+
   function fitClass(f) { return f >= 70 ? "strong" : f >= 50 ? "good" : "stretch"; }
   function fitWord(f) { return f >= 70 ? "Strong" : f >= 50 ? "Good" : "Stretch"; }
 
@@ -150,6 +211,7 @@
       '<div class="top"><div><h3>' + esc(j.title) + '</h3><div class="org">' + esc(j.org) + "</div></div>" +
       '<div class="fit ' + fitClass(j.fit) + '"><b>' + esc(j.fit) + "</b><span>" + fitWord(j.fit) + "</span></div></div>" +
       '<div class="tags">' + tags.join("") + "</div>" +
+      payLine(j) +
       '<p class="why">' + esc(j.why) + "</p>" +
       (j.requirements ? '<p class="req">' + esc(j.requirements) + "</p>" : "") +
       '<a class="apply" href="' + esc(j.link) + '" target="_blank" rel="noopener">' + label + "</a></div>";
@@ -158,10 +220,18 @@
   function pass(j) {
     if (state.filter === "all") return true;
     if (state.filter === "strong") return j.fit >= 70;
+    if (state.filter === "paysmore") {
+      var c = payVerdict(j).cls;
+      return c === "more" || c === "maybe" || c === "side";
+    }
     return j.mode === state.filter;
   }
 
   function render() {
+    var t = target();
+    document.getElementById("target").textContent = t
+      ? "Target pay: " + npr(t) + " / month or more."
+      : "No pay entered yet. Jobs show the pay range only.";
     var jobs = state.data.jobs || [], groups = { open: [], verify: [], closed: [] };
     jobs.forEach(function (j) { groups[bucket(j)].push(j); });
 
@@ -191,11 +261,24 @@
         return '<div class="card"><a href="' + esc(w.link) + '" target="_blank" rel="noopener">' + esc(w.name) +
           "</a><p>" + esc(w.note) + "</p></div>";
       }).join("");
+      document.getElementById("payref").innerHTML = (data.pay_reference || []).map(function (r) {
+        return "<tr><td>" + esc(r.level) + "</td><td>" + esc(r.range) + "</td><td>" + esc(r.note) + "</td></tr>";
+      }).join("");
       render();
     })
     .catch(function () {
       document.getElementById("open").innerHTML = '<p class="empty">Could not load jobs.json.</p>';
     });
+
+  var payEl = document.getElementById("mypay"), raiseEl = document.getElementById("raise");
+  if (load("mypay")) payEl.value = load("mypay");
+  if (load("raise")) raiseEl.value = load("raise");
+  [payEl, raiseEl].forEach(function (el) {
+    el.addEventListener("input", function () {
+      store(el.id, el.value);
+      if (state.data) render();
+    });
+  });
 
   document.getElementById("filters").addEventListener("click", function (e) {
     var f = e.target.getAttribute("data-f");

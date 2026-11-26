@@ -45,11 +45,24 @@ World Bank / IFC careers (Kathmandu) · iDE, Heifer, Practical Action, Helvetas,
 
 70+ = strong, 50–69 = good, below 50 = stretch. Write `why` in 2–3 short, plain sentences. Say what matches and what is missing.
 
+## Pay (required for every role)
+
+The person wants roles that pay more than his current job, or remote consultancies that add income on top of it. His salary is NOT stored anywhere. He enters it on the page, and it stays in his own browser. So every role needs a `type` and a `pay` estimate.
+
+- `type`: "full-time", "consultancy" (part-time, remote or short-term; the page shows this as side income) or "internship".
+- `pay`: `{ "min": NPR per month or null, "max": NPR per month or null, "basis": ..., "note": short plain text }`.
+  - basis "posted": use the posting's own figure. Convert USD to NPR at the current rate, and annual pay to monthly.
+  - basis "UN scale": work it out from the grade. Kathmandu minimums: NO-A about NPR 241,700/month; NO-B about NPR 294,900/month. NPSA-8 tracks NO-A and NPSA-9 tracks NO-B. G-grades and NPSA-1 to NPSA-7 are lower. Look up the current local scale if you can.
+  - basis "market estimate": use the ranges in `pay_reference` in jobs.json (for example, INGO programme officer about NPR 80k–150k).
+  - basis "unknown" or "stipend": leave min and max as null and explain in the note.
+- Remove the full-time roles that pay clearly less (max below about NPR 90k/month) unless the fit is 75+. Keep consultancies; they are extra income.
+- Update the `pay_reference` table if you find better 2026 data. Never invent a figure.
+
 ## jobs.json fields
 
 `id` (unique slug), `title`, `org`, `location`, `mode` ("Nepal" or "Remote"), `deadline` ("YYYY-MM-DD" or null),
 `status` ("open", "verify" or "closed"), `link` (the official posting or the page where it was found), `fit` (number),
-`why`, `requirements` (short), `added` ("YYYY-MM-DD"). Set the top-level `updated` field to today's date.
+`why`, `requirements` (short), `added` ("YYYY-MM-DD"), `type`, `pay` (see the Pay section). Set the top-level `updated` field to today's date.
 
 ## Privacy
 

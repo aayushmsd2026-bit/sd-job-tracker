@@ -13,7 +13,14 @@
       "fit": 72,
       "why": "Research consulting firm (research, M&E, data) in the social development sector. Matches your 2 years as Research Analyst at BBN and your data work. They ask for SPSS, Stata or R; you use Python, so say so clearly.",
       "requirements": "Master's degree; 3-4 years in research, M&E or development consulting. Apply by email: jobs@progressinccompany.com, subject 'Application for Research Officer – [Your Name]'.",
-      "added": "2026-11-26"
+      "added": "2026-11-26",
+      "type": "full-time",
+      "pay": {
+        "min": 40000,
+        "max": 90000,
+        "basis": "market estimate",
+        "note": "Not posted. Research officer roles in Nepal usually pay about NPR 40k–90k a month."
+      }
     },
     {
       "id": "ifc-stc-support-to-operations-nepal-2026-11",
@@ -27,7 +34,14 @@
       "fit": 64,
       "why": "IFC invests in Nepali banks, including NMB's green bond. Your banking, credit risk and analytics background suits IFC operations work. Short-term contract, so check it fits around your job.",
       "requirements": "Posted on LinkedIn about 20 Nov 2026. Deadline not confirmed. Search the title on LinkedIn or the World Bank careers site.",
-      "added": "2026-11-26"
+      "added": "2026-11-26",
+      "type": "consultancy",
+      "pay": {
+        "min": null,
+        "max": null,
+        "basis": "unknown",
+        "note": "Short-term consultant. The fee is agreed per day. Ask for the daily rate."
+      }
     },
     {
       "id": "ide-climate-resilience-agriculture-officer-2026-11",
@@ -41,7 +55,14 @@
       "fit": 45,
       "why": "Strong climate theme, but the role is field and agriculture focused. Your finance and data skills are only a partial match.",
       "requirements": "Posted on LinkedIn in November 2026. Deadline not confirmed. Search the title on LinkedIn.",
-      "added": "2026-11-26"
+      "added": "2026-11-26",
+      "type": "full-time",
+      "pay": {
+        "min": 80000,
+        "max": 150000,
+        "basis": "market estimate",
+        "note": "Not posted. INGO officer roles usually pay about NPR 80k–150k a month."
+      }
     },
     {
       "id": "un-women-gender-climate-finance-consultant-38005",
@@ -55,7 +76,14 @@
       "fit": 55,
       "why": "Closed. Shows UN agencies hire home-based climate finance consultants for Asia-Pacific. It asked for 5+ years in climate or sustainable finance, which you are building now.",
       "requirements": "Master's degree; 5+ years in climate finance, sustainable finance or development.",
-      "added": "2026-11-26"
+      "added": "2026-11-26",
+      "type": "consultancy",
+      "pay": {
+        "min": null,
+        "max": null,
+        "basis": "unknown",
+        "note": "International consultancy, usually paid in USD. Often well above Nepal market pay."
+      }
     },
     {
       "id": "undp-sdg-finance-research-intern-2026-10",
@@ -69,7 +97,14 @@
       "fit": 70,
       "why": "Closed. A very good fit for a Master's student with finance and research experience. UNDP runs this kind of internship often. Watch for the next round.",
       "requirements": "Enrolled student or recent graduate; 6-month internship.",
-      "added": "2026-11-26"
+      "added": "2026-11-26",
+      "type": "internship",
+      "pay": {
+        "min": null,
+        "max": null,
+        "basis": "stipend",
+        "note": "Internship with a small stipend at most. Pays much less than a job, so treat it as experience only."
+      }
     },
     {
       "id": "glf-learning-designer-sustainable-finance-2026",
@@ -83,7 +118,14 @@
       "fit": 50,
       "why": "Closed. A 12-month remote consultancy on sustainable finance learning content. Shows this kind of remote work exists.",
       "requirements": "Learning design plus sustainable finance knowledge.",
-      "added": "2026-11-26"
+      "added": "2026-11-26",
+      "type": "consultancy",
+      "pay": {
+        "min": null,
+        "max": null,
+        "basis": "unknown",
+        "note": "Remote consultancy. The fee was not shown."
+      }
     },
     {
       "id": "icimod-unu-hub-coordinator-2026",
@@ -97,7 +139,14 @@
       "fit": 45,
       "why": "Closed. ICIMOD posts a few times a month. Set a job alert on their vacancies page.",
       "requirements": "Fixed-term project position.",
-      "added": "2026-11-26"
+      "added": "2026-11-26",
+      "type": "full-time",
+      "pay": {
+        "min": null,
+        "max": null,
+        "basis": "unknown",
+        "note": "ICIMOD says its pay is competitive with international organisations. Exact scale not posted."
+      }
     },
     {
       "id": "heifer-po-financial-inclusion-2026-09",
@@ -111,19 +160,98 @@
       "fit": 78,
       "why": "Closed (September 2026). This is the best type of match for you: working with banks and fintechs to design inclusive credit and green-finance products. Watch Heifer, Practical Action, Helvetas and Swisscontact for similar roles.",
       "requirements": "Experience in financial inclusion, loan facilitation and working with financial institutions.",
-      "added": "2026-11-26"
+      "added": "2026-11-26",
+      "type": "full-time",
+      "pay": {
+        "min": 80000,
+        "max": 150000,
+        "basis": "market estimate",
+        "note": "Not posted. INGO officer roles usually pay about NPR 80k–150k a month."
+      }
     }
   ],
   "watch": [
-    { "name": "ICIMOD vacancies", "link": "https://www.icimod.org/get-involved/vacancies/", "note": "Mountain, climate and green economy roles. Lalitpur." },
-    { "name": "GGGI careers", "link": "https://careers.gggi.org/", "note": "Green growth, climate finance and e-mobility projects in Nepal." },
-    { "name": "UNDP jobs", "link": "https://jobs.undp.org/cj_view_jobs.cfm", "note": "Filter Nepal and Home-based. Watch the Sustainable Finance Hub." },
-    { "name": "UNICEF Nepal jobs", "link": "https://jobs.unicef.org/en-us/filter/?search-keyword=&location=nepal", "note": "Some consultancies are remote and Nepali-nationals only." },
-    { "name": "UNTalent – home-based finance roles", "link": "https://untalent.org/jobs/home-based/in-finance/contract-consulting+entry+mid+senior/anywhere", "note": "UN home-based finance and economy roles worldwide." },
-    { "name": "Impactpool", "link": "https://www.impactpool.org/", "note": "UN and development jobs. Set an alert for 'climate finance' and 'Nepal'." },
-    { "name": "Dev Jobs Nepal", "link": "https://devjobsnepal.com/", "note": "INGO and UN jobs in Nepal, updated daily." },
-    { "name": "AIN vacancies", "link": "https://www.ain.org.np/vacancy", "note": "Jobs from INGOs that are members of AIN." },
-    { "name": "JobsNepal", "link": "https://www.jobsnepal.com/", "note": "NGO, research and consulting jobs in Nepal." },
-    { "name": "Manish Blog (vacancy roundup)", "link": "https://www.manishsaru.com.np/", "note": "Daily roundup of NGO and INGO vacancies." }
+    {
+      "name": "ICIMOD vacancies",
+      "link": "https://www.icimod.org/get-involved/vacancies/",
+      "note": "Mountain, climate and green economy roles. Lalitpur."
+    },
+    {
+      "name": "GGGI careers",
+      "link": "https://careers.gggi.org/",
+      "note": "Green growth, climate finance and e-mobility projects in Nepal."
+    },
+    {
+      "name": "UNDP jobs",
+      "link": "https://jobs.undp.org/cj_view_jobs.cfm",
+      "note": "Filter Nepal and Home-based. Watch the Sustainable Finance Hub."
+    },
+    {
+      "name": "UNICEF Nepal jobs",
+      "link": "https://jobs.unicef.org/en-us/filter/?search-keyword=&location=nepal",
+      "note": "Some consultancies are remote and Nepali-nationals only."
+    },
+    {
+      "name": "UNTalent – home-based finance roles",
+      "link": "https://untalent.org/jobs/home-based/in-finance/contract-consulting+entry+mid+senior/anywhere",
+      "note": "UN home-based finance and economy roles worldwide."
+    },
+    {
+      "name": "Impactpool",
+      "link": "https://www.impactpool.org/",
+      "note": "UN and development jobs. Set an alert for 'climate finance' and 'Nepal'."
+    },
+    {
+      "name": "Dev Jobs Nepal",
+      "link": "https://devjobsnepal.com/",
+      "note": "INGO and UN jobs in Nepal, updated daily."
+    },
+    {
+      "name": "AIN vacancies",
+      "link": "https://www.ain.org.np/vacancy",
+      "note": "Jobs from INGOs that are members of AIN."
+    },
+    {
+      "name": "JobsNepal",
+      "link": "https://www.jobsnepal.com/",
+      "note": "NGO, research and consulting jobs in Nepal."
+    },
+    {
+      "name": "Manish Blog (vacancy roundup)",
+      "link": "https://www.manishsaru.com.np/",
+      "note": "Daily roundup of NGO and INGO vacancies."
+    }
+  ],
+  "pay_reference": [
+    {
+      "level": "UN National Officer NO-A (Kathmandu)",
+      "range": "From about NPR 241,700 a month (minimum)",
+      "note": "Usually about 1–2 years of experience. Nationals only."
+    },
+    {
+      "level": "UN National Officer NO-B (Kathmandu)",
+      "range": "From about NPR 294,900 a month (minimum)",
+      "note": "Usually about 2+ years of experience. Nationals only."
+    },
+    {
+      "level": "UNDP NPSA-8 / NPSA-9",
+      "range": "Tracks NO-A / NO-B",
+      "note": "NPSA levels follow the UN local scale; 8.33% added in lieu of pension."
+    },
+    {
+      "level": "INGO Programme Officer",
+      "range": "About NPR 80k–150k a month",
+      "note": "Big INGOs and donor projects. Senior roles go to NPR 200k–400k+."
+    },
+    {
+      "level": "Research Officer (Nepal firms)",
+      "range": "About NPR 40k–90k a month",
+      "note": "Usually lower than bank and INGO pay."
+    },
+    {
+      "level": "Commercial bank Officer (3–5 years)",
+      "range": "About NPR 60k–110k a month",
+      "note": "Before festival bonus and provident fund."
+    }
   ]
 }
