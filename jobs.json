@@ -252,6 +252,48 @@
         "basis": "grant",
         "note": "USD 20,000–30,000 over two years for the research. Done alongside your job."
       }
+    },
+    {
+      "id": "wbg-ypp-2028",
+      "title": "World Bank Group Young Professionals Program (next round)",
+      "org": "World Bank Group (World Bank, IFC, MIGA)",
+      "location": "Washington, DC",
+      "mode": "Remote",
+      "deadline": "2026-09-30",
+      "status": "closed",
+      "link": "https://www.worldbank.org/ext/en/careers/talent-programs/young-professionals-program",
+      "fit": 55,
+      "why": "Closed for this year; opens each September. No age limit, but you need 2 to 6 years of full-time professional experience on the cut-off date. Counted from mid-2021 you are at about 6 years by September 2027, so it is borderline. Check the exact rule when the call opens.",
+      "requirements": "Graduate degree; 2–6 years of qualifying full-time experience; national of a member country. The application asks for your work history.",
+      "added": "2026-11-26",
+      "type": "full-time",
+      "pay": {
+        "min": null,
+        "max": null,
+        "basis": "international scale",
+        "note": "International staff pay in USD. Far above Nepal market pay."
+      }
+    },
+    {
+      "id": "aiib-graduate-program-2027",
+      "title": "AIIB Graduate Program (next round)",
+      "org": "Asian Infrastructure Investment Bank",
+      "location": "Beijing, China",
+      "mode": "Remote",
+      "deadline": "2026-05-19",
+      "status": "closed",
+      "link": "https://jobs.aiib.org/go/Graduate-Program/9829501/",
+      "fit": 50,
+      "why": "Two-year rotational programme in infrastructure and green finance. Usually opens December–January. Past calls set a maximum of 5 years of experience, so you are borderline. Check each stream's rule.",
+      "requirements": "Master's degree with 1–2 years relevant experience (maximum about 5 years in past calls); fluent English.",
+      "added": "2026-11-26",
+      "type": "full-time",
+      "pay": {
+        "min": null,
+        "max": null,
+        "basis": "international scale",
+        "note": "International staff pay. Far above Nepal market pay."
+      }
     }
   ],
   "watch": [

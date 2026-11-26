@@ -37,7 +37,9 @@ World Bank / IFC careers (Kathmandu) · iDE, Heifer, Practical Action, Helvetas,
   - ADB Young Professionals Program: opens early September, closes 30 September. Age 32 or under when joining. His best fit.
   - SANDEE research grant (ICIMOD): call usually opens late November, closes 31 December.
   - Asia Foundation Development Fellows: opens around November, closes early December.
-  - Skip: World Bank YPP (2–6 years experience maximum; he has more), AIIB Graduate Program (5 years maximum), UN YPP (Nepal not a participating country in 2026; check each year's list).
+  - World Bank Group YPP: opens 1 September, closes 30 September. Track it. Note the experience rule (2–6 years on the cut-off date). Count his professional experience from July 2021.
+  - AIIB Graduate Program: usually opens December–January. Track it. Note the experience maximum for each stream.
+  - UN YPP: only if Nepal is on that year's list of participating countries.
 - `type` can also be "fellowship" (a grant, award or programme done alongside his job).
 
 ## Status rules
