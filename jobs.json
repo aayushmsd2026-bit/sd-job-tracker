@@ -168,9 +168,35 @@
         "basis": "market estimate",
         "note": "Not posted. INGO officer roles usually pay about NPR 80k–150k a month."
       }
+    },
+    {
+      "id": "icimod-yipp-2025-26",
+      "title": "Young ICIMOD Professionals Programme (YIPP) 2025/26",
+      "org": "ICIMOD",
+      "location": "Lalitpur (ICIMOD HQ)",
+      "mode": "Nepal",
+      "deadline": "2025-07-31",
+      "status": "closed",
+      "link": "https://opportunitydesk.org/2025/07/24/young-icimod-professionals-programme-2025-2026/",
+      "fit": 74,
+      "why": "Last call closed 31 Jul 2025 (about 10 places). Needs a Master's; management counts, so your MBA qualifies. 2-3 years of experience preferred; you have more. Watch for the next call around June-July.",
+      "requirements": "Master's degree; nationals of ICIMOD member countries (Nepal included); 12-18 months, full-time at HQ.",
+      "added": "2026-11-26",
+      "type": "full-time",
+      "pay": {
+        "min": 209000,
+        "max": 209000,
+        "basis": "posted",
+        "note": "USD 16,487 a year plus housing allowance and insurance. About NPR 2.1 lakh a month before tax (at about NPR 152 per USD)."
+      }
     }
   ],
   "watch": [
+    {
+      "name": "ICIMOD YIPP (young professionals)",
+      "link": "https://www.icimod.org/get-involved/vacancies/",
+      "note": "Last call: July 2025. Watch from May to August for the next round."
+    },
     {
       "name": "ICIMOD vacancies",
       "link": "https://www.icimod.org/get-involved/vacancies/",

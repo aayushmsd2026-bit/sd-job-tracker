@@ -29,6 +29,10 @@ icimod.org/get-involved/vacancies · careers.gggi.org · jobs.undp.org (Nepal an
 jobs.unicef.org (location Nepal) · UN Women careers · impactpool.org · untalent.org (home-based finance and environment) ·
 World Bank / IFC careers (Kathmandu) · iDE, Heifer, Practical Action, Helvetas, Swisscontact Nepal pages.
 
+## Special watch
+
+- ICIMOD Young ICIMOD Professionals Programme (YIPP). The last call was in July 2025 (deadline 31 July). It is not a fixed yearly call. Check ICIMOD's vacancies page every week, and closely from May to August. If a new call opens, add it as `open`, and put it first in the weekly message.
+
 ## Status rules
 
 - `open`: a deadline on or after today was confirmed on the posting.
