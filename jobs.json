@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26",
+  "updated": "2026-11-28",
   "jobs": [
     {
       "id": "progress-inc-research-officer-2026-11",
@@ -65,27 +65,6 @@
       }
     },
     {
-      "id": "un-women-gender-climate-finance-consultant-38005",
-      "title": "Gender and Climate Finance Consultant (home-based, Asia-Pacific)",
-      "org": "UN Women",
-      "location": "Home-based",
-      "mode": "Remote",
-      "deadline": "2026-11-18",
-      "status": "closed",
-      "link": "https://www.globalsouthopportunities.com/2026/11/17/un-women-56/",
-      "fit": 55,
-      "why": "Closed. Shows UN agencies hire home-based climate finance consultants for Asia-Pacific. It asked for 5+ years in climate or sustainable finance, which you are building now.",
-      "requirements": "Master's degree; 5+ years in climate finance, sustainable finance or development.",
-      "added": "2026-11-26",
-      "type": "consultancy",
-      "pay": {
-        "min": null,
-        "max": null,
-        "basis": "unknown",
-        "note": "International consultancy, usually paid in USD. Often well above Nepal market pay."
-      }
-    },
-    {
       "id": "undp-sdg-finance-research-intern-2026-10",
       "title": "SDG Finance and Private Sector Development Research Intern (home-based)",
       "org": "UNDP Sustainable Finance Hub",
@@ -104,69 +83,6 @@
         "max": null,
         "basis": "stipend",
         "note": "Internship with a small stipend at most. Pays much less than a job, so treat it as experience only."
-      }
-    },
-    {
-      "id": "glf-learning-designer-sustainable-finance-2026",
-      "title": "Consultant – Learning Designer, Sustainable Finance / Landscape Finance (home-based)",
-      "org": "Global Landscapes Forum (GLF)",
-      "location": "Home-based",
-      "mode": "Remote",
-      "deadline": "2026-10-31",
-      "status": "closed",
-      "link": "https://www.globalsouthopportunities.com/2026/10/23/finance-18/",
-      "fit": 50,
-      "why": "Closed. A 12-month remote consultancy on sustainable finance learning content. Shows this kind of remote work exists.",
-      "requirements": "Learning design plus sustainable finance knowledge.",
-      "added": "2026-11-26",
-      "type": "consultancy",
-      "pay": {
-        "min": null,
-        "max": null,
-        "basis": "unknown",
-        "note": "Remote consultancy. The fee was not shown."
-      }
-    },
-    {
-      "id": "icimod-unu-hub-coordinator-2026",
-      "title": "Coordinator – United Nations University (UNU) Hub",
-      "org": "ICIMOD",
-      "location": "Lalitpur",
-      "mode": "Nepal",
-      "deadline": "2026-11-01",
-      "status": "closed",
-      "link": "https://apply.workable.com/icimod/jobs/view/ED36789716.md",
-      "fit": 45,
-      "why": "Closed. ICIMOD posts a few times a month. Set a job alert on their vacancies page.",
-      "requirements": "Fixed-term project position.",
-      "added": "2026-11-26",
-      "type": "full-time",
-      "pay": {
-        "min": null,
-        "max": null,
-        "basis": "unknown",
-        "note": "ICIMOD says its pay is competitive with international organisations. Exact scale not posted."
-      }
-    },
-    {
-      "id": "heifer-po-financial-inclusion-2026-09",
-      "title": "Project Officer – Financial Inclusion (PROSPER project)",
-      "org": "Heifer Project International Nepal",
-      "location": "Nepal",
-      "mode": "Nepal",
-      "deadline": null,
-      "status": "closed",
-      "link": "https://www.manishsaru.com.np/2026/09/heifer-project-nepal-vacancy-for.html",
-      "fit": 78,
-      "why": "Closed (September 2026). This is the best type of match for you: working with banks and fintechs to design inclusive credit and green-finance products. Watch Heifer, Practical Action, Helvetas and Swisscontact for similar roles.",
-      "requirements": "Experience in financial inclusion, loan facilitation and working with financial institutions.",
-      "added": "2026-11-26",
-      "type": "full-time",
-      "pay": {
-        "min": 80000,
-        "max": 150000,
-        "basis": "market estimate",
-        "note": "Not posted. INGO officer roles usually pay about NPR 80k–150k a month."
       }
     },
     {
@@ -242,7 +158,7 @@
       "status": "closed",
       "link": "https://www.icimod.org/sandee/research-grants/",
       "fit": 66,
-      "why": "Research grant for early-career South Asian researchers in environmental economics. The last call opened in late November 2025 and closed 31 Dec 2025, so the next call may open any day. Your green finance work could become a proposal, ideally with a KU teacher.",
+      "why": "Research grant for early-career South Asian researchers in environmental economics. The last call opened in November 2025 and closed 31 Dec 2025. No new call was posted as of 28 Nov 2026, so keep checking. Your green finance work could become a proposal, ideally with a KU teacher.",
       "requirements": "Researchers from South Asia / HKH; strong economics methods; people with relatives working with ICIMOD are not eligible.",
       "added": "2026-11-26",
       "type": "fellowship",
@@ -321,6 +237,11 @@
       "name": "ICIMOD vacancies",
       "link": "https://www.icimod.org/get-involved/vacancies/",
       "note": "Mountain, climate and green economy roles. Lalitpur."
+    },
+    {
+      "name": "Heifer Nepal careers",
+      "link": "https://jobs.jobvite.com/heifer",
+      "note": "Posted a Financial Inclusion Project Officer role in Sept 2026 (strong fit). Watch for similar roles."
     },
     {
       "name": "GGGI careers",
